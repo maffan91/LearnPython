@@ -19,3 +19,8 @@ print(elements.__len__())
 
 
 # while loop practice
+num = 1024
+
+while num % 2 == 0 and num != 0:
+    print(num)
+    num /= 2
