@@ -1,8 +1,7 @@
 # tuple declaration
 my_tupple = ('apple', 'ball', 'cat', 'dog')
 
-for i in my_tupple:
-    print(i)
+print(my_tupple)
 
 print(my_tupple.__len__())
 
