@@ -21,10 +21,10 @@ def split_sentences(document):
     segmented_document = [start_of_sentence]
     for word in document:
         if '?' in word or '!' in word or ':' in word:
-            segmented_document.append(word[:-1] + end_of_sentance)
+            segmented_document.append(word[:-1] + end_of_sentance + start_of_sentence)
         elif '.' in word:
             if not is_a_synonym(word):
-                segmented_document.append(word[:-1] + end_of_sentance)
+                segmented_document.append(word[:-1] + end_of_sentance + start_of_sentence)
         else:
             segmented_document.append(word + ' ')
     return "".join(segmented_document)
