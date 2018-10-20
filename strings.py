@@ -1,3 +1,3 @@
-initial_of_name = 'Affan'[1]
+initial_of_name = 'Affan'[0]
 print(initial_of_name)
 
